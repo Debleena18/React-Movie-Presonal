@@ -2,6 +2,7 @@
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import React from 'react'
+import './Featured.scss'
 
 function Featured({ type }) {
   return (
