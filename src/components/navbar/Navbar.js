@@ -5,11 +5,12 @@ import "./Navbar.scss";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
+//Its going to run this () when we scroll
   window.onscroll = () => {
-    setIsScrolled(window.pageYOffset === 0 ? false : true);
+    setIsScrolled(window.pageYOffset === 0 ? false : true); //It means if the page is on top then it's False else state change to True
     return () => (window.onscroll = null);
   };
-  
+
   return (
     <div className={isScrolled ? "navbar scrolled" : "navbar"}>
       <div className="container">
